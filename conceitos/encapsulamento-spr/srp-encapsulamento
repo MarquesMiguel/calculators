@@ -1,0 +1,56 @@
+# SOLID[0] -> single responsabilty principle 
+->https://www.youtube.com/watch?v=mkx0CdWiPRA
+
+->https://www.youtube.com/watch?v=dzmYoSzL8ok&list=PL7yh-TELLS1FuqLSjl5bgiQIEH25VEmIc&index=5
+
+->https://www.youtube.com/watch?v=6SfrO3D4dHM
+### single responsabilty principle (srp) -> divide and conquer
+    -> uma classe/modulo, deve ter apenas 1 unica responsabilidade e 1 unico motivo para mudar
+
+
+    -> para cada responsabilidade do seu sistema, ter uma unica identidade que 'e especializada (cuja a unica resposabilidade) seja fazer aquilo
+
+motivos:
+* reaproveitar o codigo
+* debuggar
+* testes automatizados
+* refatorar mais facilmente
+* menos bugs
+* implimentar coisas novas mais facilmente
+
+onde comeca e onde termina a resposabilidade de cada componente?
+
+    -> manchar roupa na maquina de lavar
+    -> tentar no nome da funcao ou componente tudo que ela faz
+
+
+---
+---
+# encapsulamento
+
+"metodos privados"
+### -> controlar como elementos podem ser acessados/modificados
+
+    o que o mundo externo precisa saber?
+    o que e um detalhe interno?
+
+### information hiding
+
+    - "esconda as decisoes que provavelmente vao mudar"
+
+o encapsulamento garante invariantes
+
+## getters e setters
+
+controlar as regras
+
+servem para proteger os dados de uma classe
+
+    -> getter, le o valor de uma variavel encapsulada, retorna
+    -> setter altera o valor de uma variavel
+    -> em python usamos o decorator @proprierty para criar getter e setters
+
+### @proprierty
+    -> transformar um metodo em uma propriedade em uma classe,
+    -> acessar como uma variavel
+    -> getters e setters
